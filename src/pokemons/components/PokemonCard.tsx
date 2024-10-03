@@ -16,7 +16,7 @@ export const PokemonCard = ({ pokemon: { id, name } }: Props) => {
           <Image key={id} src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`} alt={name} priority={false} width={100} height={100} />
           <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">{name}</p>
           <div className="mt-5">
-            <Link href={`/dashboard/pokemon/${id}`} className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100">
+            <Link href={`/dashboard/pokemons/${name}`} className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100">
               Read more
             </Link>
           </div>
