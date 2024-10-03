@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { IoBrowsersOutline, IoCalculator, IoFootballOutline, IoLogoReact } from "react-icons/io5";
-import { SidebarMenuItem } from ".";
+import { IoBrowsersOutline, IoCalculator, IoFootballOutline, IoHeartOutline, IoLogoReact } from "react-icons/io5";
+import { SidebarMenuItem } from "./SidebarMenuItem";
 
 interface menuItem {
   path: string;
@@ -26,6 +26,12 @@ const menuItems: menuItem[] = [
     icon: <IoFootballOutline size={40} />,
     title: "Datafetching",
     subtitle: "Static generation",
+  },
+  {
+    path: "/dashboard/favorites",
+    icon: <IoHeartOutline size={40} />,
+    title: "Favorites",
+    subtitle: "Global State",
   },
 ];
 
